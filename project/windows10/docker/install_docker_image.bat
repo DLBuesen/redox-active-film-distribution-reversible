@@ -21,7 +21,7 @@ timeout 3
 echo Installing the docker container image...
 echo.
 
-docker pull dlbuesen/mat_mcr:910_10may21
+docker pull dlbuesen/redox-active-film-distribution-reversible:version-1.0-layer-07
 
 timeout 3
 echo Listing the installed docker images on the system...
@@ -33,8 +33,8 @@ docker images
 timeout 3
 
 echo Docker image from repository
-echo "dlbuesen/mat_mcr"
-echo with tag "910_10may21"
+echo "dlbuesen/redox-active-film-distribution-reversible"
+echo with tag "version-1.0-layer-07"
 echo should appear in the list of images above
 echo.
 
