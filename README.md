@@ -13,7 +13,7 @@
 - A full description of the system is given in the following research [paper](https://pubs.rsc.org/en/content/articlelanding/2020/sc/c9sc03653a#!divAbstract).
 
 # App Demonstration Video
-- A demo of the app is shown in a [video] for running the app on a windows 10 operating system.
+- A demo of the app is shown in a [video](https://vimeo.com/557098624) for running the app on a windows 10 operating system.
 
 # Results Obtained
 - Concentration and interaction parameter estimate values via calculations performed by the app.
