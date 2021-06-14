@@ -27,9 +27,11 @@
 - Restart your computer after the installation because a windows specific virtualization process "vmmem" tends to take up nearly all RAM for some reason while the docker image is installed, but this is no longer an issue after the systme is rebooted.
 
 # Running the App and Verifying Correct Installation
-- Start an XLaunch session with access control disabled. Note the display number that is assigned by hovering over the icon after launch (i.e. Desktop-BN8H7BC:0.0 in which case the display is 0.0). Most of the time, the default is 0.0, but not always, so this step is included for robustness. It also allows flexibility for users who have multiple screens, because it allows for the possibility of pointing the output of the app to a screen which is manually assigned while the XLaunch session is started.
-- Run the launchApp script in the "windows10" folder. Follow the instructions to enter the virtual Ip4 "Ipv4" address for your computer, and enter the display number during the app launch process.
-- After setting the paths for the parameter and data export excel files, run the simulation with the preset parameter values. Verify that the resulting plot matches the results shown in the demonstration video.
+- Start an XLaunch session by keeping all of the defaults, except that access control should be disabled.
+- Run the launchApp script in the "windows10" folder and follow the instructions.
+- Follow the instructions of the startup script to enter the screen number assigned by XLaunch. Most of the time, the default is 0, but not always, so most of the time one can simply type 0 in the launch script and move on. If necessary, however, the display number that is assigned can be found by hovering over the xLaunch icon in the task tray; the display number is the last number (i.e. Desktop-ABCXYZ:0.0 in which case the display is 0). Including this option in the start up script also gives flexibility for users who have multiple screens, because it allows for the possibility of manually assigning a screen while initiating the XLaunch session and then pointi the output of the app to that particular screen.
+- Follow the instructions to enter the virtual Ip4 "Ipv4" address for your computer, and enter the display number during the app launch process. This Ip address is the virtual IP address that your computer uses to communicate with docker and is not the IP address that your computer uses for accessing the world wide web.
+- After setting the paths for the parameter and data export excel files, run the simulation with the preset parameter values.  Verify that the resulting plot matches the results shown in the demonstration video.
 - Change one of the parameters, save the Excel file, and rerun the simulation to verify that the result changes. If the Excel file is not saved after changes, then the app will not be able to recognize the changes.
 - Close docker and XLaunch.
 
