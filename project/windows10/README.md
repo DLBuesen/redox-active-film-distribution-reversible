@@ -21,10 +21,10 @@
 - Prior to installing and using the app, it is required to startup Docker Desktop, logging into your account. It is also necessary to start an XLaunch session.
 
 # Installing the App
-- Download the project folder from this repository and unzip to any location on your computer.
-- Close as many programs as possible and use your computer as little as possible during the installation. A restart might be required because a windows specific virtualization process "vmmem" tends to take up nearly all RAM for some reason while the docker image is installed if it is the first time that the image is installed and there are no other similar images already installed. However, after the system is restarted after the installation, the computer RAM usage is once again normal. If your system already has a similar docker container image installed from another similar app, then the installation should not only be very fast, but should also not have vmmem problems, and a restart should not be required.
-- Verify that docker desktop is running, that you are signed into your docker account, and that docker is set for running linux based containers.
-- Run the docker container installation script in the "containers" folder.
+- Download the project folder from this repository and unzip to any location on your computer. Close as many programs as possible and use your computer as little as possible during the installation.
+- Verify that docker desktop is running, that you are signed into your docker account, and that docker is set for running linux based containers. 
+- Run the docker container installation script in the "containers" folder. If your system already has a similar docker container image installed from another similar app, then the installation should be rather fast. Otherwise, due to the large size of the container (i.e. 10 GB or so), expect installation to take as long as 10 minutes. To minimize the possibility of interruptions during download, it is recommended to download the container over a DSL cable connection rather than via WiFi.
+- Restart your computer after the installation because a windows specific virtualization process "vmmem" tends to take up nearly all RAM for some reason while the docker image is installed, but this is no longer an issue after the systme is rebooted.
 
 # Running the App and Verifying Correct Installation
 - Start an XLaunch session with access control disabled. Note the display number that is assigned by hovering over the icon after launch (i.e. Desktop-BN8H7BC:0.0 in which case the display is 0.0). Most of the time, the default is 0.0, but not always, so this step is included for robustness. It also allows flexibility for users who have multiple screens, because it allows for the possibility of pointing the output of the app to a screen which is manually assigned while the XLaunch session is started.
