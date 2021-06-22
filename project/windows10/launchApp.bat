@@ -7,12 +7,6 @@ echo Should be signed in to dockerhub account.
 
 timeout 3
 
-echo checking login status...
-echo.
-docker login
-
-timeout 3
-
 echo.
 echo For granting the Docker container access to the screen...
 echo XLaunch should be running with "Disable access control" selected.
@@ -66,5 +60,5 @@ echo.
 
 :: Run the container
 
-docker run --rm -ti --env DISPLAY=%IPv4%:%XLaunchScreenID% -p 127.0.0.1:8000:8000 -v "%cd%":/home/fenics/shared -v "%cd%":/project -w / dlbuesen/redox-active-film-distribution-reversible:version-1.0-layer-07 ./launchApp.sh
+docker run --rm -ti --env DISPLAY=%IPv4%:%XLaunchScreenID% -p 127.0.0.1:8000:8000 -v "%cd%":/home/fenics/shared -v "%cd%":/project -w / dlbuesen/redox-active-film-distribution-reversible:v1.0.1-layer04 ./launchApp.sh
 

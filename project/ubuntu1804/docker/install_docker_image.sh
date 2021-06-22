@@ -14,7 +14,7 @@ gnome-terminal --tab -- bash -c '\
 	echo "Installing the docker image...";\
 	echo ;\
 	sleep 3;\
-	docker pull dlbuesen/redox-active-film-distribution-reversible:version-1.0-layer-07;\
+	docker pull dlbuesen/redox-active-film-distribution-reversible:v1.0.1-layer04;\
 	sleep 3;\
 	echo ;\
 	echo "Confirming installation of the docker image...";\
@@ -23,7 +23,7 @@ gnome-terminal --tab -- bash -c '\
 	echo "Docker image from repository";\
 	echo "dlbuesen/redox-active-film-distribution-reversible";\
 	echo "with tag"
- 	echo "version-1.0-layer-07";\
+ 	echo "v1.0.1-layer04";\
 	echo "should appear in the list of images below";\
 	echo ;\
 	docker images;\
