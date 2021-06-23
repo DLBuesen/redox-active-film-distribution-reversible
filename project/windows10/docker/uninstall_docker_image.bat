@@ -12,12 +12,6 @@ echo Should be signed in to dockerhub account.
 
 timeout 3
 
-echo checking login status...
-echo.
-docker login
-
-timeout 3
-
 echo Uninstalling the docker container image...
 echo.
 
