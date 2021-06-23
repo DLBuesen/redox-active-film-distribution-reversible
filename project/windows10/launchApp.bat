@@ -60,5 +60,5 @@ echo.
 
 :: Run the container
 
-docker run --rm -ti --env DISPLAY=%IPv4%:%XLaunchScreenID% -p 127.0.0.1:8000:8000 -v "%cd%":/home/fenics/shared -v "%cd%":/project -w / dlbuesen/redox-active-film-distribution-reversible:v1.0.1-layer04 ./launchApp.sh
+docker run --rm -ti --env DISPLAY=%IPv4%:%XLaunchScreenID% -p 127.0.0.1:8000:8000 -v "%cd%":/home/fenics/shared -v "%cd%":/project -w / dlbuesen/redox-active-film-distribution-reversible:v1.0.1-layer05 ./launchApp.sh
 
