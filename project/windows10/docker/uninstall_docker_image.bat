@@ -15,7 +15,7 @@ timeout 3
 echo Uninstalling the docker container image...
 echo.
 
-docker rmi dlbuesen/redox-active-film-distribution-reversible:v1.0.1-layer05
+docker rmi dlbuesen/redox-active-film-distribution-reversible:v1.0.1-layer04
 
 timeout 3
 echo Listing the installed docker images on the system...
@@ -28,7 +28,7 @@ timeout 3
 
 echo Docker image from repository
 echo "dlbuesen/redox-active-film-distribution-reversible"
-echo with tag "v1.0.1-layer05"
+echo with tag "v1.0.1-layer04"
 echo should not appear in the list of images above
 echo.
 
